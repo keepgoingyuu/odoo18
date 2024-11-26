@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_car_beauty_work_order" model="ir.actions.act_window">
+        <field name="name">美容工單</field>
+        <field name="res_model">car.beauty.work.order</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_car_beauty_root" 
+        name="汽車美容" 
+        sequence="10"/>
+
+    <menuitem id="menu_car_beauty_work_order"
+        name="美容工單"
+        parent="menu_car_beauty_root"
+        action="action_car_beauty_work_order"
+        sequence="10"/>
+</odoo>
